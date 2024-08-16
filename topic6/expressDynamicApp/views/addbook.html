@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add a New Book</title>
+</head>
+<body>
+    <h1>This is the addbook page</h1>
+    <p>This is an example of a paragraph inside the addbook page</p>
+    <form action="/bookadded" method="POST">
+        <label for="name">Book Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" required><br><br>
+        <input type="submit" value="Add Book">
+    </form>
+    <br>
+    <a href="/list">View all the books</a>
+</body>
+</html>
